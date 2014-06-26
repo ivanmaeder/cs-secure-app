@@ -10,7 +10,7 @@ if (isset($_POST["user"], $_POST["pass"])) { //if form enviado
     $pass = $_POST["pass"];
 
     if ($user == "ivan" && $pass == "1234") {
-        $_SESSION["usuario_autorizado"] = $user;
+        $_SESSION["usuario_autorizado"] = $user; //damos acceso
 
         header("Location: http://localhost/secure/welcome.php");
     }

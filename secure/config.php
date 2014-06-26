@@ -26,6 +26,7 @@ if ($user == "" || $user != "ivan") {
     <li><a href="welcome.php">Welcome</a></li>
     <li><a href="config.php">Config</a></li>
     <li><a href="account.php">Account</a></li>
+    <li><a href="logout.php">Salir</a></li>
   </ul>
 </body>
 </html>
