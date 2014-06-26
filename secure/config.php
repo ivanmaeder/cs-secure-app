@@ -17,10 +17,10 @@ if ($user == "" || $user != "ivan") {
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Página welcome.php</title>
+    <title>Página config.php</title>
   </head>
 <body>
-  <h1>¡Bienvenido!</h1>
+  <h1>Config</h1>
   <p>Esta es una página con acceso restringido.</p>
   <ul>
     <li><a href="welcome.php">Welcome</a></li>
