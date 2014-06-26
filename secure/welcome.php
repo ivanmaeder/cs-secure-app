@@ -1,15 +1,8 @@
 <?php
 
 session_start();
-/*
-echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
-exit();
-*/
-$user = "";
 
-if (!isset($_SESSION["usuario_autorizado"])) { //es solo esto
+if (!isset($_SESSION["usuario_autorizado"])) {
     header("Location: http://localhost/");
 }
 
