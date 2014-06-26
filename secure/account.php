@@ -2,13 +2,9 @@
 
 session_start();
 
-$user = "";
-
-if (isset($_SESSION["usuario_autorizado"])) {
-    $user = $_SESSION["usuario_autorizado"];
-}
-
-if ($user == "" || $user != "ivan") {
+/* Si no hay usuario en sesión... */
+if (!isset($_SESSION["usuario_autorizado"])) {
+    /* ... redirigo a login */
     header("Location: http://localhost/");
 }
 

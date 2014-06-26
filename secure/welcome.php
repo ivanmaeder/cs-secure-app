@@ -1,14 +1,15 @@
 <?php
 
 session_start();
-
+/*
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
+exit();
+*/
 $user = "";
 
-if (isset($_SESSION["usuario_autorizado"])) {
-    $user = $_SESSION["usuario_autorizado"];
-}
-
-if ($user == "" || $user != "ivan") {
+if (!isset($_SESSION["usuario_autorizado"])) { //es solo esto
     header("Location: http://localhost/");
 }
 
