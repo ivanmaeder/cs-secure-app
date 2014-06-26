@@ -1,11 +1,16 @@
 <?php
 
+$message = "";
+
 if (isset($_POST["user"], $_POST["pass"])) { //if form enviado
     $user = $_POST["user"];
     $pass = $_POST["pass"];
 
     if ($user == "ivan" && $pass == "1234") {
-        echo "Bien!!!!!";
+        $message = "Bien!!!!!";
+    }
+    else {
+        $message = "Usuario/contraseña no coinciden";
     }
 }
 
@@ -17,6 +22,7 @@ if (isset($_POST["user"], $_POST["pass"])) { //if form enviado
     <title>Aplicación segura</title>
   </head>
 <body>
+  <?= $message ?><br>
   <form action="" method="post">
     <input type="text" name="user" placeholder="Usuario"><br>
     <input type="password" name="pass" placeholder="Contraseña"><br>
