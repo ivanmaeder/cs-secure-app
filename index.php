@@ -1,5 +1,6 @@
 <?php
 
+$user    = "";
 $message = "";
 
 if (isset($_POST["user"], $_POST["pass"])) { //if form enviado
@@ -24,7 +25,7 @@ if (isset($_POST["user"], $_POST["pass"])) { //if form enviado
 <body>
   <?= $message ?><br>
   <form action="" method="post">
-    <input type="text" name="user" placeholder="Usuario"><br>
+    <input type="text" name="user" value="<?= $user ?>" placeholder="Usuario"><br>
     <input type="password" name="pass" placeholder="Contraseña"><br>
     <input type="submit" value="Entrar">
   </form>
