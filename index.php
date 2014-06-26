@@ -8,7 +8,7 @@ if (isset($_POST["user"], $_POST["pass"])) { //if form enviado
     $pass = $_POST["pass"];
 
     if ($user == "ivan" && $pass == "1234") {
-        $message = "Bien!!!!!";
+        header("Location: http://localhost/secure/welcome.php");
     }
     else {
         $message = "Usuario/contraseña no coinciden";
